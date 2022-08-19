@@ -7,7 +7,6 @@ class Hat:
 		for k, v in kwargs.items():
 			for _ in range(v):
 				self.contents.append(k)
-
 	def draw(self, ball):
 		if ball > len(self.contents):
 			return self.contents
@@ -20,7 +19,6 @@ class Hat:
 
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 	hat_with_balls = copy.deepcopy(hat)
-	N = 0
 	M = 0
 	target = []
 	for i in expected_balls:
